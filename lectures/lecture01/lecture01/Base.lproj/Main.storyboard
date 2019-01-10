@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lecture01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="edJ-x0-vbM" userLabel="Fuscia">
+                                <rect key="frame" x="40" y="60" width="688" height="924"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sjC-9s-qWM" userLabel="Fuscia Screen">
+                                        <rect key="frame" x="0.0" y="0.0" width="688" height="924"/>
+                                        <color key="backgroundColor" white="1" alpha="0.80340325342465757" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LPf-yx-vCu" userLabel="Teal">
+                                        <rect key="frame" x="69.5" y="187.5" width="550" height="550"/>
+                                        <color key="backgroundColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="LPf-yx-vCu" secondAttribute="height" multiplier="1:1" id="52P-8X-wa7"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="sjC-9s-qWM" secondAttribute="trailing" id="75f-uK-aG7"/>
+                                    <constraint firstItem="sjC-9s-qWM" firstAttribute="leading" secondItem="edJ-x0-vbM" secondAttribute="leading" id="FBy-Hz-DQx"/>
+                                    <constraint firstItem="sjC-9s-qWM" firstAttribute="top" secondItem="edJ-x0-vbM" secondAttribute="top" id="OSu-R5-YKQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="sjC-9s-qWM" secondAttribute="bottom" id="OYX-hq-1mK"/>
+                                    <constraint firstItem="LPf-yx-vCu" firstAttribute="centerY" secondItem="edJ-x0-vbM" secondAttribute="centerY" id="Xc2-kB-QJX"/>
+                                    <constraint firstItem="LPf-yx-vCu" firstAttribute="height" secondItem="edJ-x0-vbM" secondAttribute="height" multiplier="0.8" priority="750" id="cy9-S7-DI6"/>
+                                    <constraint firstItem="LPf-yx-vCu" firstAttribute="height" relation="lessThanOrEqual" secondItem="edJ-x0-vbM" secondAttribute="height" multiplier="0.8" id="iK6-4T-0mk"/>
+                                    <constraint firstItem="LPf-yx-vCu" firstAttribute="width" relation="lessThanOrEqual" secondItem="edJ-x0-vbM" secondAttribute="width" multiplier="0.8" id="sTs-n9-f56"/>
+                                    <constraint firstItem="LPf-yx-vCu" firstAttribute="width" secondItem="edJ-x0-vbM" secondAttribute="width" multiplier="0.8" priority="750" id="z8g-7E-IO7"/>
+                                    <constraint firstItem="LPf-yx-vCu" firstAttribute="centerX" secondItem="edJ-x0-vbM" secondAttribute="centerX" id="zYs-1O-ibS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="edJ-x0-vbM" secondAttribute="trailing" constant="40" id="DzZ-ST-tej"/>
+                            <constraint firstItem="edJ-x0-vbM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="hDs-uC-E2E"/>
+                            <constraint firstItem="edJ-x0-vbM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="ihF-9d-e6n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="edJ-x0-vbM" secondAttribute="bottom" constant="40" id="lLp-vY-Rx8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="110.83743842364532"/>
+        </scene>
+    </scenes>
+</document>

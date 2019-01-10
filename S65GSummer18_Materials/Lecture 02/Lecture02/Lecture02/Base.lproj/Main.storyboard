@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lecture02" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iDh-IK-l1r" userLabel="Safe">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="awk-2b-HnC" userLabel="Teal">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="374"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Should stay vertical" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lji-2b-uHt">
+                                                <rect key="frame" x="437" y="177" width="150" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.6588235294" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Lji-2b-uHt" firstAttribute="centerX" secondItem="awk-2b-HnC" secondAttribute="centerX" id="LKl-sW-tan"/>
+                                            <constraint firstItem="Lji-2b-uHt" firstAttribute="centerY" secondItem="awk-2b-HnC" secondAttribute="centerY" id="jw4-zE-jcg"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yn2-s6-f6t" userLabel="Fuscia">
+                                        <rect key="frame" x="0.0" y="374" width="1024" height="374"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Yn2-s6-f6t" secondAttribute="bottom" id="85f-jx-S0M"/>
+                                    <constraint firstItem="Yn2-s6-f6t" firstAttribute="top" secondItem="iDh-IK-l1r" secondAttribute="top" id="B3C-1a-5bG"/>
+                                    <constraint firstItem="awk-2b-HnC" firstAttribute="leading" secondItem="iDh-IK-l1r" secondAttribute="leading" id="CYb-X1-89b"/>
+                                    <constraint firstAttribute="trailing" secondItem="awk-2b-HnC" secondAttribute="trailing" id="Di2-Qv-33Z"/>
+                                    <constraint firstAttribute="bottom" secondItem="Yn2-s6-f6t" secondAttribute="bottom" id="HH4-f2-vZD"/>
+                                    <constraint firstItem="Yn2-s6-f6t" firstAttribute="leading" secondItem="awk-2b-HnC" secondAttribute="trailing" id="KYt-Y3-orD"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yn2-s6-f6t" secondAttribute="trailing" id="LwW-IH-k0D"/>
+                                    <constraint firstItem="awk-2b-HnC" firstAttribute="top" secondItem="iDh-IK-l1r" secondAttribute="top" id="Na9-ti-8xU"/>
+                                    <constraint firstItem="awk-2b-HnC" firstAttribute="width" secondItem="iDh-IK-l1r" secondAttribute="width" multiplier="0.5" id="VV4-4h-VNX"/>
+                                    <constraint firstItem="Yn2-s6-f6t" firstAttribute="leading" secondItem="iDh-IK-l1r" secondAttribute="leading" id="dZA-3E-ecD"/>
+                                    <constraint firstItem="Yn2-s6-f6t" firstAttribute="top" secondItem="awk-2b-HnC" secondAttribute="bottom" id="i2r-gK-RTk"/>
+                                    <constraint firstItem="awk-2b-HnC" firstAttribute="height" secondItem="iDh-IK-l1r" secondAttribute="height" multiplier="0.5" id="mvB-33-6XI"/>
+                                    <constraint firstAttribute="bottom" secondItem="awk-2b-HnC" secondAttribute="bottom" id="xdk-Xn-IKi"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="VV4-4h-VNX"/>
+                                        <exclude reference="xdk-Xn-IKi"/>
+                                        <exclude reference="85f-jx-S0M"/>
+                                        <exclude reference="B3C-1a-5bG"/>
+                                        <exclude reference="KYt-Y3-orD"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="Di2-Qv-33Z"/>
+                                        <include reference="VV4-4h-VNX"/>
+                                        <exclude reference="mvB-33-6XI"/>
+                                        <include reference="xdk-Xn-IKi"/>
+                                        <exclude reference="85f-jx-S0M"/>
+                                        <include reference="B3C-1a-5bG"/>
+                                        <include reference="KYt-Y3-orD"/>
+                                        <exclude reference="dZA-3E-ecD"/>
+                                        <exclude reference="i2r-gK-RTk"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iDh-IK-l1r" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="A7H-nA-m0D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iDh-IK-l1r" secondAttribute="bottom" id="bY4-SF-tw9"/>
+                            <constraint firstItem="iDh-IK-l1r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ksC-JU-KXP"/>
+                            <constraint firstItem="iDh-IK-l1r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yly-vE-nQw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.69950738916256" y="133.59999999999999"/>
+        </scene>
+    </scenes>
+</document>

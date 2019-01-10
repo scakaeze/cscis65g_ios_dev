@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lecture01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jlK-52-6bT" userLabel="Fuscia">
+                                <rect key="frame" x="40" y="60" width="688" height="924"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6q8-C4-D3f" userLabel="Fuscia Screen">
+                                        <rect key="frame" x="0.0" y="0.0" width="688" height="924"/>
+                                        <color key="backgroundColor" white="1" alpha="0.80570419520547942" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="roy-X6-17q" userLabel="Teal">
+                                        <rect key="frame" x="69" y="187.5" width="550" height="550"/>
+                                        <color key="backgroundColor" red="0.0" green="0.6588235294" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="roy-X6-17q" secondAttribute="height" multiplier="1:1" id="YAj-bC-djr"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="275"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="6q8-C4-D3f" secondAttribute="bottom" id="2eB-Ow-dje"/>
+                                    <constraint firstItem="roy-X6-17q" firstAttribute="width" secondItem="jlK-52-6bT" secondAttribute="width" multiplier="0.8" priority="750" id="4Vf-0R-zre"/>
+                                    <constraint firstItem="roy-X6-17q" firstAttribute="centerX" secondItem="jlK-52-6bT" secondAttribute="centerX" id="CCu-qq-6fC"/>
+                                    <constraint firstItem="roy-X6-17q" firstAttribute="width" relation="lessThanOrEqual" secondItem="jlK-52-6bT" secondAttribute="width" multiplier="0.8" id="FYM-AK-meF"/>
+                                    <constraint firstItem="6q8-C4-D3f" firstAttribute="leading" secondItem="jlK-52-6bT" secondAttribute="leading" id="Ins-Tc-eKe"/>
+                                    <constraint firstItem="roy-X6-17q" firstAttribute="centerY" secondItem="jlK-52-6bT" secondAttribute="centerY" id="OPI-49-4kc"/>
+                                    <constraint firstItem="roy-X6-17q" firstAttribute="height" secondItem="jlK-52-6bT" secondAttribute="height" multiplier="0.8" priority="750" id="eWp-n1-pO9"/>
+                                    <constraint firstAttribute="trailing" secondItem="6q8-C4-D3f" secondAttribute="trailing" id="gjh-GZ-hI9"/>
+                                    <constraint firstItem="6q8-C4-D3f" firstAttribute="top" secondItem="jlK-52-6bT" secondAttribute="top" id="gsW-5F-fWq"/>
+                                    <constraint firstItem="roy-X6-17q" firstAttribute="height" relation="lessThanOrEqual" secondItem="jlK-52-6bT" secondAttribute="height" multiplier="0.8" id="sWb-ls-vnj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jlK-52-6bT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="GGL-e1-T9a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jlK-52-6bT" secondAttribute="bottom" constant="40" id="GqW-gk-bno"/>
+                            <constraint firstItem="jlK-52-6bT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="QJp-Eu-K1E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jlK-52-6bT" secondAttribute="trailing" constant="40" id="lIL-XY-dzc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.74384236453201"/>
+        </scene>
+    </scenes>
+</document>
