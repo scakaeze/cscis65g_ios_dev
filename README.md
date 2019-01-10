@@ -1,1 +1,1 @@
-# cscis65g_ios_dev
+# Reference Repo for CSCI-S65G
